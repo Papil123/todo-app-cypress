@@ -5,8 +5,8 @@ const TodoList = ({ todos = [] }) => {
     <div>
       {todos.map((todo) => (
         <li key={todo.id}>
-          <input type="checkbox" value={todo.isCompleted} />
-          <span>{todo.value}</span>
+          <input data-testid="todo-input" type="checkbox" value={todo.isCompleted} />
+          <span data-testid="todo-value" >{todo.value}</span>
         </li>
       ))}
     </div>
